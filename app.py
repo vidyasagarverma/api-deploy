@@ -37,4 +37,5 @@ def translate():
     return jsonify({"original_text": text_to_translate, "translated_text": translated_text})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
+
